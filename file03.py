@@ -7,4 +7,13 @@ def main(data:str):
         list: return answer
     """
     
+    x = []
+    idx = 0
+    while idx < len(data):
+        if data[idx].isdigit():
+            x.append(data[idx])
+        idx += 1
+    
+    return x
+    
 # Read data from file
