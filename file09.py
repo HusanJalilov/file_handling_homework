@@ -6,5 +6,11 @@ def main(data:str):
     Returns:
         int: return answer
     """
-
-# Read data from file
+    idx = 0
+    min = 0
+    while idx < len(data):
+        if data[idx].isdigit():
+            if int(data[idx]) < min:
+                min = int(data[idx])
+        idx += 1    
+    return min
