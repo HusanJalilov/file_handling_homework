@@ -6,5 +6,13 @@ def main(data:str):
     Returns:
         list: return answer
     """
+    x = []
+    idx = 0
+    while idx < len(data):
+        if not data[idx].isdigit():
+            x.append(data[idx])
+        idx += 1
+    #list2 = list(map(str,list2))
+    return x 
     
 # Read data from file
